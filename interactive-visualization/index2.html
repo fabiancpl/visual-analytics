@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis--x path {
+  display: none;
+}
+
+</style>
+<div id="aa"></div>
+<script src="./node_modules/d3/dist/d3.min.js"></script>
+<script>
+
+var svg = d3.select("#aa").append("svg"),
+    margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 1000 - margin.left - margin.right,
+    height = 1000 - margin.top - margin.bottom;
+
+var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+    y = d3.scaleLinear().rangeRound([height, 0]);
+
+var g = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("./data/IPSs-colombia-classified-comma.csv", function(d) {
+ return {
+      'NIT': d[ 'NIT' ],
+      'Nombre': d[ 'Nombre' ],
+      'Naturaleza': d[ 'Naturaleza' ],
+      'Nivel de Atención': d[ 'Nivel de Atención' ],
+
+      'Camas Adultos': +d[ 'Camas Adultos' ],
+      'Camas Cuidado Agudo Mental': +d[ 'Camas Cuidado Agudo Mental' ],
+      'Camas Cuidado Intensivo Adulto': +d[ 'Camas Cuidado Intensivo Adulto' ],
+      'Camas Cuidado Intensivo Neonatal': +d[ 'Camas Cuidado Intensivo Neonatal' ],
+      'Camas Cuidado Intensivo Pediátrico': +d[ 'Camas Cuidado Intensivo Pediátrico' ],
+      'Camas Cuidado Intermedio Adultos': +d[ 'Camas Cuidado Intermedio Adulto' ],
+      'Camas Cuidado Intermedio Mental': +d[ 'Camas Cuidado Intermedio Mental' ],
+      'Camas Cuidado Intermedio Neonatal': +d[ 'Camas Cuidado Intermedio Neonatal' ],
+      'Camas Cuidado Intermedio Pediátrico': +d[ 'Camas Cuidado Intermedio Pediátrico' ],
+      'Camas Cuidado Básico Neonatal': +d[ 'Camas Cuidado básico neonatal' ],
+      'Camas Farmacodependencia': +d[ 'Camas Farmacodependencia' ],
+      'Camas Institución Paciente Crónico': +d[ 'Camas Institución Paciente Crónico' ],
+      'Camas Obstetricia': +d[ 'Camas Obstetricia' ],
+      'Camas Pediátrica': +d[ 'Camas Pediátrica' ],
+      'Camas Psiquiatría': +d[ 'Camas Psiquiatría' ],
+      'Camas Salud Mental': +d[ 'Camas Salud Mental' ],
+      'Camas Transplante de Progenitores Hematopoyeticos': +d[ 'Camas Transplante de progenitores hematopoyeticos' ],
+      'Camas Unidad de Quemados Adulto': +d[ 'Camas Unidad de Quemados Adulto' ],
+      'Camas Unidad de Quemados Pediátrico': +d[ 'Camas Unidad de Quemados Pediátrico' ],
+      'Salas Partos': +d[ 'Salas Partos' ],
+      'Salas Procedimientos': +d[ 'Salas Procedimientos' ],
+      'Salas Quirófano': +d[ 'Salas Quirófano' ],
+      
+    };
+}).then( function( data) {
+
+  var data = d3.nest()
+      .key( function( d ) { return d[ 'Naturaleza' ]; } )
+      .rollup( function( v ) { return v.length; } )
+      .entries( data );
+
+  console.log( data );
+  x.domain(data.map(function(d) { return d.key; }));
+  y.domain([0, d3.max(data, function(d) { return d.value; })]);
+
+  g.append("g")
+      .attr("class", "axis axis--x")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+  g.append("g")
+      .attr("class", "axis axis--y")
+      .call(d3.axisLeft(y).ticks(10, "%"))
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", "0.71em")
+      .attr("text-anchor", "end")
+      .text("Frequency");
+
+  g.selectAll(".bar")
+    .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.key); })
+      .attr("y", function(d) { return y(d.value); })
+      .attr("width", x.bandwidth())
+      .attr("height", function(d) { return height - y(d.value); });
+});
+
+</script>

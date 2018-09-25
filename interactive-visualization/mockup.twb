@@ -1,0 +1,739 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.0627.2230                               -->
+<workbook original-version='18.1' source-build='2018.2.0 (20182.18.0627.2230)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='IPSs-colombia-classified' inline='true' name='federated.1o2gn211s060uq17uhmvh12akll6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='IPSs-colombia-classified' name='textscan.1dqoo481yo8xt614jevvj1a7ceyt'>
+            <connection class='textscan' directory='C:/Users/fc.pena/Documents/git/visual-analytics/interactive-visualization/data' filename='IPSs-colombia-classified.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1dqoo481yo8xt614jevvj1a7ceyt' name='IPSs-colombia-classified.csv' table='[IPSs-colombia-classified#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_CO' separator=';'>
+            <column datatype='real' name='Camas Adultos' ordinal='0' />
+            <column datatype='real' name='Camas Cuidado Agudo Mental' ordinal='1' />
+            <column datatype='real' name='Camas Cuidado Intensivo Adulto' ordinal='2' />
+            <column datatype='real' name='Camas Cuidado Intensivo Neonatal' ordinal='3' />
+            <column datatype='real' name='Camas Cuidado Intensivo Pediátrico' ordinal='4' />
+            <column datatype='real' name='Camas Cuidado Intermedio Adulto' ordinal='5' />
+            <column datatype='real' name='Camas Cuidado Intermedio Mental' ordinal='6' />
+            <column datatype='real' name='Camas Cuidado Intermedio Neonatal' ordinal='7' />
+            <column datatype='real' name='Camas Cuidado Intermedio Pediátrico' ordinal='8' />
+            <column datatype='real' name='Camas Cuidado básico neonatal' ordinal='9' />
+            <column datatype='real' name='Camas Farmacodependencia' ordinal='10' />
+            <column datatype='real' name='Camas Institución Paciente Crónico' ordinal='11' />
+            <column datatype='real' name='Camas Obstetricia' ordinal='12' />
+            <column datatype='real' name='Camas Pediátrica' ordinal='13' />
+            <column datatype='real' name='Camas Psiquiatría' ordinal='14' />
+            <column datatype='real' name='Camas Salud Mental' ordinal='15' />
+            <column datatype='real' name='Camas Transplante de progenitores hematopoyeticos' ordinal='16' />
+            <column datatype='real' name='Camas Unidad de Quemados Adulto' ordinal='17' />
+            <column datatype='real' name='Camas Unidad de Quemados Pediátrico' ordinal='18' />
+            <column datatype='string' name='NIT' ordinal='19' />
+            <column datatype='string' name='Naturaleza' ordinal='20' />
+            <column datatype='string' name='Nivel de Atención' ordinal='21' />
+            <column datatype='string' name='Nombre' ordinal='22' />
+            <column datatype='real' name='Salas Partos' ordinal='23' />
+            <column datatype='real' name='Salas Procedimientos' ordinal='24' />
+            <column datatype='real' name='Salas Quirófano' ordinal='25' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_CO&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Adultos</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Adultos]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Adultos</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Cuidado Agudo Mental</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Cuidado Agudo Mental]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Cuidado Agudo Mental</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Cuidado Intensivo Adulto</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Cuidado Intensivo Adulto]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Cuidado Intensivo Adulto</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Cuidado Intensivo Neonatal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Cuidado Intensivo Neonatal]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Cuidado Intensivo Neonatal</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Cuidado Intensivo Pediátrico</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Cuidado Intensivo Pediátrico]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Cuidado Intensivo Pediátrico</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Cuidado Intermedio Adulto</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Cuidado Intermedio Adulto]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Cuidado Intermedio Adulto</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Cuidado Intermedio Mental</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Cuidado Intermedio Mental]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Cuidado Intermedio Mental</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Cuidado Intermedio Neonatal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Cuidado Intermedio Neonatal]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Cuidado Intermedio Neonatal</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Cuidado Intermedio Pediátrico</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Cuidado Intermedio Pediátrico]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Cuidado Intermedio Pediátrico</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Cuidado básico neonatal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Cuidado básico neonatal]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Cuidado básico neonatal</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Farmacodependencia</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Farmacodependencia]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Farmacodependencia</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Institución Paciente Crónico</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Institución Paciente Crónico]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Institución Paciente Crónico</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Obstetricia</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Obstetricia]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Obstetricia</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Pediátrica</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Pediátrica]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Pediátrica</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Psiquiatría</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Psiquiatría]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Psiquiatría</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Salud Mental</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Salud Mental]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Salud Mental</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Transplante de progenitores hematopoyeticos</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Transplante de progenitores hematopoyeticos]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Transplante de progenitores hematopoyeticos</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Unidad de Quemados Adulto</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Unidad de Quemados Adulto]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Unidad de Quemados Adulto</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camas Unidad de Quemados Pediátrico</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Camas Unidad de Quemados Pediátrico]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Camas Unidad de Quemados Pediátrico</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NIT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NIT]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>NIT</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Naturaleza</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Naturaleza]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Naturaleza</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nivel de Atención</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nivel de Atención]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Nivel de Atención</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nombre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nombre]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Nombre</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salas Partos</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Salas Partos]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Salas Partos</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salas Procedimientos</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Salas Procedimientos]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Salas Procedimientos</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salas Quirófano</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Salas Quirófano]</local-name>
+            <parent-name>[IPSs-colombia-classified.csv]</parent-name>
+            <remote-alias>Salas Quirófano</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[NIT]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Naturaleza]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Nivel de Atención]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[Naturaleza]' derivation='None' name='[none:Naturaleza:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Nivel de Atención]' derivation='None' name='[none:Nivel de Atención:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.24937' measure-ordering='alphabetic' measure-percentage='0.75063' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Nivel de Atención:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;1&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;3&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Naturaleza:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mixta&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pública&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Privada&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Colombia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IPSs-colombia-classified' name='federated.1o2gn211s060uq17uhmvh12akll6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o2gn211s060uq17uhmvh12akll6'>
+            <column datatype='string' name='[Naturaleza]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Nivel de Atención]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Naturaleza]' derivation='None' name='[none:Naturaleza:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nivel de Atención]' derivation='None' name='[none:Nivel de Atención:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1o2gn211s060uq17uhmvh12akll6].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1o2gn211s060uq17uhmvh12akll6].[sum:Number of Records:qk]&quot;' user:op='manual' />
+          </filter>
+          <alphabetic-sort column='[federated.1o2gn211s060uq17uhmvh12akll6].[none:Naturaleza:nk]' direction='DESC' />
+          <slices>
+            <column>[federated.1o2gn211s060uq17uhmvh12akll6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o2gn211s060uq17uhmvh12akll6].[none:Naturaleza:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1o2gn211s060uq17uhmvh12akll6].[Multiple Values]</rows>
+        <cols>([federated.1o2gn211s060uq17uhmvh12akll6].[none:Nivel de Atención:nk] / [federated.1o2gn211s060uq17uhmvh12akll6].[none:Naturaleza:nk])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IPSs-colombia-classified' name='federated.1o2gn211s060uq17uhmvh12akll6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o2gn211s060uq17uhmvh12akll6'>
+            <column datatype='string' name='[Naturaleza]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Salas Quirófano]' role='measure' type='quantitative' />
+            <column-instance column='[Naturaleza]' derivation='None' name='[none:Naturaleza:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Salas Quirófano]' derivation='Sum' name='[sum:Salas Quirófano:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1o2gn211s060uq17uhmvh12akll6].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1o2gn211s060uq17uhmvh12akll6].[sum:Salas Quirófano:qk]&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <alphabetic-sort column='[federated.1o2gn211s060uq17uhmvh12akll6].[none:Naturaleza:nk]' direction='DESC' />
+          <slices>
+            <column>[federated.1o2gn211s060uq17uhmvh12akll6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o2gn211s060uq17uhmvh12akll6].[none:Naturaleza:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1o2gn211s060uq17uhmvh12akll6].[Multiple Values]</rows>
+        <cols>[federated.1o2gn211s060uq17uhmvh12akll6].[none:Naturaleza:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1o2gn211s060uq17uhmvh12akll6].[:Measure Names]' show-all='false' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1o2gn211s060uq17uhmvh12akll6].[none:Naturaleza:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1o2gn211s060uq17uhmvh12akll6].[:Measure Names]</field>
+            <field>[federated.1o2gn211s060uq17uhmvh12akll6].[none:Naturaleza:nk]</field>
+            <field>[federated.1o2gn211s060uq17uhmvh12akll6].[none:Nivel de Atención:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1o2gn211s060uq17uhmvh12akll6].[:Measure Names]' show-all='false' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1o2gn211s060uq17uhmvh12akll6].[none:Naturaleza:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1o2gn211s060uq17uhmvh12akll6].[:Measure Names]</field>
+            <field>[federated.1o2gn211s060uq17uhmvh12akll6].[none:Naturaleza:nk]</field>
+            <field>[federated.1o2gn211s060uq17uhmvh12akll6].[none:Nivel de Atención:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      /wFGscBAoj7s5AAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1 (2)' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
