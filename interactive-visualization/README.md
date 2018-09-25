@@ -2,7 +2,7 @@
 
 [Link to visualization](https://fabiancpl.github.io/visual-analytics/interactive-visualization/)
 
-## Licencia
+## License
 
 Este proyecto se encuentra publicado bajo la licencia MIT: 
 
