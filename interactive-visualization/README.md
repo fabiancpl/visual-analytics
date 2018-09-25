@@ -1,6 +1,6 @@
-# Homework 3 - Interactive Visualization
+# Homework 3 - Comparación las IPSs por Nivel de Atención y Capacidad Instalada
 
-Comparación las IPSs por Nivel de Atención y Capacidad Instalada: [Link to visualization](https://fabiancpl.github.io/visual-analytics/interactive-visualization/)
+[Link to visualization](https://fabiancpl.github.io/visual-analytics/interactive-visualization/)
 
 ## License
 
