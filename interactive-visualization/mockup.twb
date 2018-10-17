@@ -490,7 +490,7 @@
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='Sheet 1 (2)'>
+    <window class='worksheet' name='Sheet 1 (2)'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -528,7 +528,7 @@
         </highlight>
       </viewpoint>
     </window>
-    <window class='worksheet' name='Sheet 1'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
       <cards>
         <edge name='left'>
           <strip size='160'>
